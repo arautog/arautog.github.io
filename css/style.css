@@ -860,8 +860,8 @@ span.sb-caret { /* Caret Down */
 	padding-top: 0;
 }
 #hero h2 {
-    font-family: '1942-webfont';
-    font-size: 120px;
+    font-family: 'monospace';
+    font-size: 100px;
 	color: #151515;
 	margin-bottom: 20px;
 	display: inline-block;
@@ -3358,4 +3358,11 @@ footer .footer_bottom {
 .icon-google-plus:before { content: "\e62d"; }
 .icon-facebook:before { content: "\e62f"; }
 .icon-github:before { content: "\e636"; }
+
+.icon-feed:hover { content: "\e631";  font-size: 1.6em;  color: #eb0015;}
+.icon-twitter:hover { content: "\e630"; font-size: 1.6em;  color: #eb0015;}
+.icon-google-plus:hover { content: "\e62d"; font-size: 1.6em;  color: #eb0015;}
+.icon-facebook:hover { content: "\e62f"; font-size: 1.6em;  color: #eb0015;}
+.icon-github:hover { content: "\e636"; font-size: 1.6em;  color: #eb0015;}
+
 /*---------------- END ------------------------*/
