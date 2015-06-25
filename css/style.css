@@ -3360,9 +3360,9 @@ footer .footer_bottom {
 .icon-github:before { content: "\e636"; }
 
 .icon-feed:hover { content: "\e631";  font-size: 1.6em;  color: #eb0015;}
-.icon-twitter:hover { content: "\e630"; font-size: 1.6em;  color: #eb0015;}
+.icon-twitter:hover { content: "\e630"; font-size: 1.6em;  color: #4467eb;}
 .icon-google-plus:hover { content: "\e62d"; font-size: 1.6em;  color: #eb0015;}
-.icon-facebook:hover { content: "\e62f"; font-size: 1.6em;  color: #eb0015;}
-.icon-github:hover { content: "\e636"; font-size: 1.6em;  color: #eb0015;}
+.icon-facebook:hover { content: "\e62f"; font-size: 1.6em;  color: #2e1ce0;}
+.icon-github:hover { content: "\e636"; font-size: 1.6em;  color: #242226;}
 
 /*---------------- END ------------------------*/
