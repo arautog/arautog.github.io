@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title><![CDATA[Renan Morais]]></title>
+    <link>http://renanmorais.com/</link>
+    <atom:link href="/atom.xml" rel="self" type="application/rss+xml"/>
+    <description><![CDATA[Blog's Renan Morais]]></description>
+    <pubDate>Sat, 07 Nov 2015 03:43:04 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title><![CDATA[Iniciando com Ionic]]></title>
+      <link>http://renanmorais.com/Post/InicioComIonic/</link>
+      <guid>http://renanmorais.com/Post/InicioComIonic/</guid>
+      <pubDate>Sun, 21 Jun 2015 22:43:01 GMT</pubDate>
+      <description>
+      <![CDATA[<p>Olá galera, nesse post irei falar sobre <strong>Ionic</strong>, que é um framework front-end para mobile, quem já teve experiencia com<br>angularJS, não terá dificuldades com com esse framework, ele utiliza basicamente HTML, CSS, JAVA-SCRIPT, AngularJS<br>que é essencial para criar seus componentes e Cordova como integração com os recursos nativos dos dispositivos moveis,<br>que rodam em  sistemas operacionais  iOS7+ e Android 4.4+.</p>]]>
+      
+      </description>
+      <content:encoded><![CDATA[<p>Olá galera, nesse post irei falar sobre <strong>Ionic</strong>, que é um framework front-end para mobile, quem já teve experiencia com<br>angularJS, não terá dificuldades com com esse framework, ele utiliza basicamente HTML, CSS, JAVA-SCRIPT, AngularJS<br>que é essencial para criar seus componentes e Cordova como integração com os recursos nativos dos dispositivos moveis,<br>que rodam em  sistemas operacionais  iOS7+ e Android 4.4+.</p>
+<a id="more"></a>
+<h2 id="Vantagens_de_usar_o_Ionic"><strong>Vantagens de usar o Ionic</strong></h2><ul>
+<li>Baixa curva de aprendizado</li>
+<li>Custo de desenvolvimento menor </li>
+<li>Compatibilidade entre dispositivos</li>
+<li>Arquitetura MVC</li>
+<li>Vários componentes já prontos similares aos nativos</li>
+<li>Extremamente produtivo</li>
+<li>Muito material na internet</li>
+</ul>
+<hr>
+<h2 id="Antes_de_começar_a_usar_!!!"><strong>Antes de começar a usar !!!</strong></h2><p>De uma olhadinha de como funciona o framework  (<a href="https://angularjs.org/" target="_blank" rel="external">AngularJS</a>), isso facilitará o seu desempenho<br>na hora que estiver criando seu app em Ionic pois como disse a pouco AngularJS é a base do ionic.</p>
+<p>É necessário baixar e instalar o nodeJS (<a href="https://nodejs.org/" target="_blank" rel="external">aqui</a>)<br>Para verificar já se possui o node instalado em sua maquina execute o comando no seu shell ou prompt de comando :</p>
+<pre><code><span class="variable">$ </span>node -v
+</code></pre><p>como retorno terá a versão do node instalada em sua maquina, isso se ele estiver instalado,<br>também verifique qual versão do npm, para ver se está tudo correto, com o comando:</p>
+<pre><code>$ <span class="built_in">npm</span> -v
+</code></pre><p>Quanto instalei pela primeira vez em minha maquina tive alguns problemas com nodeJS, que foi resolvido abrindo o prompt<br>de comando em modo administrador. encontrei  um link interessante onde você faz algumas configurações e pode usar o<br>nodeJS sem ser administrador.<br>(<a href="http://blog.erkobridee.com/2012/11/16/utilizando-o-node-js-em-um-windows-xp-sem-administrador/" target="_blank" rel="external">Link</a>)</p>
+<p>Nesse momento também é interessante você já instalar o Gulp, que iremos utilizar um pouco mais pra frente para<br>compilar o SCSS, isso mesmo, o ionic utiliza o preprocessador Sass para gerar o CSS.</p>
+<pre><code>$ npm <span class="keyword">install</span> -g gulp
+</code></pre><hr>
+<h2 id="Ambiente_de_desenvolvimento"><strong>Ambiente de desenvolvimento</strong></h2><p>Você pode utilizar qualquer editor de texto, ou qualquer ide que te ajude no desenvolvimento de HTML, CSS, Java-Script,<br> como exemplo posso citar o  <a href="http://www.sublimetext.com/" target="_blank" rel="external">Sublime</a>, que é gratuito e conta com uma gama de plugins,<br> eu particularmente utilizo <a href="https://www.jetbrains.com/webstorm/download/" target="_blank" rel="external">WebStorm</a>, é pago mais já estou acostumado<br> com ele.<br>O ionic já conta com emuladores para simular seu projeto, porem se você estiver desenvolvendo para IOS é necessário<br>estar utilizando um sistema operacional OSX, é interessante também já ter instalado no computador as sdks dos mesmos.</p>
+<hr>
+<h2 id="Instalando_o_Ionic"><strong>Instalando o Ionic</strong></h2><p>Para instalar o Cordova e o Ionic, digite no shell ou no  prompt de comando :</p>
+<pre><code>$ npm <span class="keyword">install</span> -g cordova ionic
+</code></pre><p>Apos a instalação do cordova e ionic ja podemos criar um projeto, existe 3 templates que podemos utilizar,<br> <strong>blank</strong>, <strong>tabs</strong> e <strong>sidemenu</strong></p>
+<p>Para criar um projeto com o template blank execute o comando:</p>
+<pre><code>$ ionic <span class="built_in">start</span> nomeMeuAplicativo blank
+</code></pre><p>Já para criar modelo de tabs, execute o comando:    </p>
+<pre><code>$ ionic <span class="built_in">start</span> nomeMeuAplicativo tabs
+</code></pre><p>E por final para criar template de sidemenu execute o comando:    </p>
+<pre><code>$ ionic <span class="built_in">start</span> nomeMeuAplicativo sidemenu
+</code></pre><p>Substitua “nomeMeuAplicativo” pelo nome que quiser.<br>Abaixo você pode verificar os 3 templates de como serão na forma inicial.</p>
+<p><img src="/Post/InicioComIonic/templatesIonic.PNG" alt=""></p>
+<p>Agora para configurar o Sass do Ionic execute o comando:</p>
+<pre><code><span class="variable">$ </span>ionic setup sass
+</code></pre><p>Para o seguinte exemplo irei utilizar o template tabs, onde, apos criado, teremos a seguinte estrutura de arquivos:</p>
+<p><img src="/Post/InicioComIonic/estruturaIonic.PNG" alt=""></p>
+<p>No arquivo app,js é que utilizamos para configurar as rotas do AngularJS, junto com ele ficam nossos services.js e<br>controllers.js que são utilizados para melhorar a estrutura aplicando a  logica da arquitetura MVC.<br>Na raiz do projeto temos o arquivo config.xml utilizado para configuração de build, arquivo bower.json onde configura<br> as dependências que o bower irá gerenciar, o arquivo gulpfile temos algumas tarefas do Ionic e no arquivo package.json<br> as dependencias do nodeJS.</p>
+<hr>
+<h2 id="Startando_o_app_para_testes"><strong>Startando o app para testes</strong></h2><p>Depois de ter feito as configurações acima, basta ir no shell ou prompt de comando e executar a linha:</p>
+<pre><code><span class="variable">$ </span>ionic serve
+</code></pre><p>Pronto, agora você ja pode ir no seu navegador e ver a aplicação rodando, no endereço “localhost:8100” </p>
+<p><img src="/Post/InicioComIonic/ionicAppCriado.PNG" alt=""></p>
+<h2 id="Concluindo"><strong>Concluindo</strong></h2><p>O Ionic é um framework muito poderoso, rápido e fácil de aprender, a comunidade muito ativa, com muito material para<br>pesquisa e exemplos, isso ajuda bastante na hora que estamos começando, neste artigo mostrei somente de como iniciar<br>com ionic, logo mais irei publicar mais artigos, explicando mais sobre esse fantástico framework. E vou ficando por<br>aqui para o post não ficar extenso qualquer coisa deixe seu comentário, muito obrigado.</p>
+]]></content:encoded>
+      <comments>http://renanmorais.com/Post/InicioComIonic/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
